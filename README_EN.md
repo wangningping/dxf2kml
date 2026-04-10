@@ -17,14 +17,14 @@ English | [简体中文](README.md)
 
 ## 📋 Features
 
-- �?**DXF Direct Conversion** - Support AutoCAD DXF format
-- �?**Multiple CAD Entities** - LINE, POLYLINE, CIRCLE, ARC, POINT, TEXT, INSERT
-- �?**CGCS2000 Coordinate System** - Full support for China Geodetic Coordinate System 2000
-- �?**UTM Projection** - Universal Transverse Mercator support
-- �?**Batch Conversion** - Process multiple files at once
-- �?**Bilingual Interface** - Chinese/English one-click switch
-- �?**GUI + CLI** - Both graphical and command-line interfaces
-- �?**Professional Parameters** - Central meridian, false easting, false northing, elevation
+- ✅ **DXF Direct Conversion** - Support AutoCAD DXF format
+- ✅ **Multiple CAD Entities** - LINE, POLYLINE, CIRCLE, ARC, POINT, TEXT, INSERT
+- ✅ **CGCS2000 Coordinate System** - Full support for China Geodetic Coordinate System 2000
+- ✅ **UTM Projection** - Universal Transverse Mercator support
+- ✅ **Batch Conversion** - Process multiple files at once
+- ✅ **Bilingual Interface** - Chinese/English one-click switch
+- ✅ **GUI + CLI** - Both graphical and command-line interfaces
+- ✅ **Professional Parameters** - Central meridian, false easting, false northing, elevation
 
 ---
 
@@ -58,7 +58,7 @@ cd dxf2kml
 pip install -r requirements.txt
 
 # Launch GUI
-python dxf2kml_gui.py
+python dwg2kml_gui.py
 ```
 
 ---
@@ -68,7 +68,7 @@ python dxf2kml_gui.py
 ### Graphical Interface (GUI)
 
 ```bash
-python dxf2kml_gui.py
+python dwg2kml_gui.py
 ```
 
 **Features:**
@@ -84,19 +84,19 @@ python dxf2kml_gui.py
 
 ```bash
 # Single file conversion
-python dxf2kml.py input.dxf -o output.kml
+python dwg2kml.py input.dxf -o output.kml
 
 # Batch conversion
-python dxf2kml.py --batch ./dxf_folder -o ./kml_output
+python dwg2kml.py --batch ./dxf_folder -o ./kml_output
 
 # Using CGCS2000 (Beijing area)
-python dxf2kml.py input.dxf -o output.kml --cgcs2000-3deg 39
+python dwg2kml.py input.dxf -o output.kml --cgcs2000-3deg 39
 
 # Using UTM
-python dxf2kml.py input.dxf -o output.kml --utm --zone 50
+python dwg2kml.py input.dxf -o output.kml --utm --zone 50
 
 # View help
-python dxf2kml.py --help
+python dwg2kml.py --help
 ```
 
 ---
@@ -128,8 +128,8 @@ Supports North and South hemispheres, zones 1-60.
 
 ```
 dxf2kml/
-├── dxf2kml.py              # Command-line tool
-├── dxf2kml_gui.py          # Graphical interface
+├── dwg2kml.py              # Command-line tool
+├── dwg2kml_gui.py          # Graphical interface
 ├── requirements.txt        # Python dependencies
 ├── pyproject.toml         # Project configuration
 ├── LICENSE                # MIT License
@@ -138,11 +138,11 @@ dxf2kml/
 ├── onekeystart.bat        # Windows one-click launch
 ├── install.bat            # Windows install script
 ├── docs/
-�?  ├── guides/            # wangningping guides
-�?  �?  ├── CGCS2000 指南.md
-�?  �?  ├── 快速使用指�?md
-�?  �?  └── 功能说明.md
-�?  └── screenshots/       # Screenshots
+│   ├── guides/            # User guides
+│   │   ├── CGCS2000 指南.md
+│   │   ├── 快速使用指南.md
+│   │   └── 功能说明.md
+│   └── screenshots/       # Screenshots
 ├── examples/              # Example files
 └── .github/
     └── workflows/         # GitHub Actions
@@ -164,7 +164,7 @@ pyproj>=3.0.0     # Coordinate transformation
 ## 📖 Documentation
 
 - [**CGCS2000 Guide**](docs/guides/CGCS2000 指南.md) - Detailed coordinate system explanation
-- [**Quick Start Guide**](docs/guides/快速使用指�?md) - 5-minute tutorial
+- [**Quick Start Guide**](docs/guides/快速使用指南.md) - 5-minute tutorial
 - [**Features**](docs/guides/功能说明.md) - Complete feature list
 - [**Contributing**](CONTRIBUTING.md) - How to contribute
 
